@@ -9,6 +9,30 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-    
+    <form novalidate>
+        <legend>Form Validation</legend>
+        <label for="email">Email</label>
+        <input type="email" name="country" id="email">
+        <span class="error" id="email-error"></span>
+
+        <label for="country">Country</label>
+        <input type="text" id="country" name="country">
+        <span class="error" id="country-error"></span>
+
+        <label for="zipcode">Zip Code</label>
+        <input type="text" name="zipcode" id="zipcode">
+        <span class="error" id="zipcode-error"></span>
+
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password">
+        <span class="error" id="password-error"></span>
+
+        <label for="password2">Confirm password</label>
+        <input type="password" name="password2" id="password2">
+        <span class="error" id="password2-error"></span>
+
+        <button>Submit</button>
+        <span id="user-message"></span>
+    </form>
 </body>
 </html>
